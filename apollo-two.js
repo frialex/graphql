@@ -21,15 +21,18 @@ const posts = [
 const comments = [
     { id: 1,
       postId: 1,
-      text: ' first comment'
+      text: ' first comment',
+      authorId: 1
     },
     { id: 2,
       postId: 1,
-      text: ' second comment'
+      text: ' second comment',
+      authorId: 1
     },
     { id: 3,
       postId: 2,
-      text: ' third comment'
+      text: ' third comment',
+      authorId: 1
     }
    ];
 
@@ -39,6 +42,7 @@ const typeDefs = gql`
   type Comments{
    id: ID!
    postId: ID!
+   authorId: ID!
    text: String!
   }
 
